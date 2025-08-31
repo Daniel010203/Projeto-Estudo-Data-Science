@@ -1,0 +1,14 @@
+import plotly.express as px
+import pandas as pd
+
+# Dados fictícios
+df = pd.DataFrame({
+    'Unidade': ['Rio', 'SP', 'Curitiba', 'Manaus'],
+    'Produção': [12500, 18300, 9500, 11000]
+})
+
+fig = px.bar(df, x='Unidade', y='Produção', color='Unidade',
+             title='Produção Mensal por Unidade - Plotly',
+             text='Produção')
+fig.update_traces(textposition='outside')
+fig.show()
