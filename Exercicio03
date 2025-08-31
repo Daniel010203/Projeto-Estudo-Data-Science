@@ -1,0 +1,12 @@
+import matplotlib.pyplot as plt
+
+# Dados fictícios
+unidades = ['Rio', 'São Paulo', 'Curitiba', 'Manaus']
+quantidades = [12500, 18300, 9500, 11000]
+
+# Gráfico de barras
+plt.bar(unidades, quantidades, color='purple')
+plt.title('Produção Mensal por Unidade')
+plt.xlabel('Unidades')
+plt.ylabel('Quantidade Produzida')
+plt.show()
