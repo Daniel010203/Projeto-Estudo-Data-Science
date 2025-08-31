@@ -1,0 +1,16 @@
+import matplotlib.pyplot as plt
+
+# Dados fictícios
+meses = ['Jan', 'Fev', 'Mar', 'Abr', 'Mai', 'Jun']
+analgésicos = [320, 400, 370, 450, 500, 480]
+antibióticos = [210, 250, 230, 300, 310, 290]
+
+# Gráfico de linhas
+plt.plot(meses, analgésicos, label='Analgésicos', color='blue', linewidth=2)
+plt.plot(meses, antibióticos, label='Antibióticos', color='green', linestyle='--')
+plt.title('Vendas Mensais de Medicamentos')
+plt.xlabel('Meses')
+plt.ylabel('Vendas (milhares)')
+plt.legend()
+plt.grid(True)
+plt.show()
