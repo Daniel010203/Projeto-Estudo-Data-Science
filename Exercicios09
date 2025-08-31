@@ -1,0 +1,15 @@
+# Dados fictícios
+dados = pd.DataFrame({
+    'Jan': [1200, 1500, 1100, 900],
+    'Fev': [1300, 1600, 1000, 950],
+    'Mar': [1250, 1400, 1050, 1000],
+    'Abr': [1400, 1550, 950, 1100],
+    'Mai': [1350, 1600, 980, 1150]
+}, index=['Rio', 'SP', 'Curitiba', 'Manaus'])
+
+plt.figure(figsize=(10,6))
+sns.heatmap(dados, annot=True, cmap="YlGnBu", linewidths=.5)
+plt.title("Produção Mensal por Unidade - Mapa de Calor")
+plt.xlabel("Mês")
+plt.ylabel("Unidade")
+plt.show()
