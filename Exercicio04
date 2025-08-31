@@ -1,0 +1,14 @@
+import matplotlib.pyplot as plt
+
+# Dados fictícios
+medicamentos = ['MediX', 'CuraZ', 'PharmaLife', 'NeoHeal']
+eficacia = [85, 78, 92, 88]
+
+# Gráfico com marcadores
+plt.scatter(medicamentos, eficacia, color='red', marker='o')
+plt.title('Eficácia dos Medicamentos')
+plt.xlabel('Medicamentos')
+plt.ylabel('Eficácia (%)')
+plt.ylim(70, 100)
+plt.grid(True)
+plt.show()
