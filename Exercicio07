@@ -1,0 +1,13 @@
+import plotly.express as px
+import pandas as pd
+
+df = pd.DataFrame({
+    'Medicamento': ['MediX', 'CuraZ', 'PharmaLife', 'NeoHeal'],
+    'Eficácia (%)': [85, 78, 92, 88]
+})
+
+fig = px.scatter(df, x='Medicamento', y='Eficácia (%)',
+                 color='Medicamento', size='Eficácia (%)',
+                 title='Eficácia dos Medicamentos - Plotly',
+                 hover_data=['Eficácia (%)'])
+fig.show()
