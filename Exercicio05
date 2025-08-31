@@ -1,0 +1,23 @@
+import seaborn as sns
+import matplotlib.pyplot as plt
+import pandas as pd
+
+# Dados fictícios
+dados = {
+    'Mês': ['Jan', 'Fev', 'Mar', 'Abr', 'Mai', 'Jun'],
+    'Analgésicos': [320, 400, 370, 450, 500, 480],
+    'Antibióticos': [210, 250, 230, 300, 310, 290]
+}
+
+df = pd.DataFrame(dados)
+
+# Estilo do Seaborn
+sns.set(style="whitegrid", palette="pastel")
+
+# Plotagem
+plt.figure(figsize=(10,6))
+sns.lineplot(x='Mês', y='Analgésicos', data=df, label='Analgésicos')
+sns.lineplot(x='Mês', y='Antibióticos', data=df, label='Antibióticos')
+plt.title('Vendas Mensais de Medicamentos - Seaborn')
+plt.legend()
+plt.show()
