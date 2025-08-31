@@ -1,0 +1,9 @@
+import matplotlib.pyplot as plt
+
+transportes = ['Rodoviário', 'Aéreo', 'Marítimo', 'Ferroviário']
+percentuais = [55, 20, 15, 10]
+
+fig, ax = plt.subplots()
+ax.pie(percentuais, labels=transportes)
+plt.title("Distribuição por Tipo de Transporte")
+plt.show()
